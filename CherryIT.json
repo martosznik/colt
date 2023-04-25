@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "8298e783-d76d-4059-a429-513ef1a2fd77",
+		"name": "CherryIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24113092"
+	},
+	"item": [
+		{
+			"name": "nowa tablica",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "tworzenie karty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/cards",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nowa tablica",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/boards/?token={{token}}&key={{key}}&name=cccc",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "name",
+							"value": "cccc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/lists?token={{token}}&key={{key}}&name=1&idBoard=6437f4aa4c786f707abdbec5",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "name",
+							"value": "1"
+						},
+						{
+							"key": "idBoard",
+							"value": "6437f4aa4c786f707abdbec5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/lists?token={{token}}&key={{key}}&name=2&idBoard=6437f4aa4c786f707abdbec5",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "name",
+							"value": "2"
+						},
+						{
+							"key": "idBoard",
+							"value": "6437f4aa4c786f707abdbec5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tworzenie karty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}?key={{key}}&token={{token}}&name=dostać prace&idList=64390edfae8bd0fadb4a3022&idBoard=6437f4aa4c786f707abdbec5",
+					"host": [
+						"{{baseURL}}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "dostać prace"
+						},
+						{
+							"key": "idList",
+							"value": "64390edfae8bd0fadb4a3022"
+						},
+						{
+							"key": "idBoard",
+							"value": "6437f4aa4c786f707abdbec5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
