@@ -1,0 +1,537 @@
+{
+	"info": {
+		"_postman_id": "575c0d9e-66ba-4e19-abb5-b6e5b40ed2d8",
+		"name": "TRELLO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24113092"
+	},
+	"item": [
+		{
+			"name": "zmiany nazw list na tablicy",
+			"item": [
+				{
+					"name": "lista1- co do nauki?",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists/643e5c3b70fc2bbcad04533f?key={{key}}&token={{token}}&name=co do nauki?&idBoard=643e5c3b70fc2bbcad045338",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"643e5c3b70fc2bbcad04533f"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "co do nauki?"
+								},
+								{
+									"key": "idBoard",
+									"value": "643e5c3b70fc2bbcad045338"
+								},
+								{
+									"key": "id",
+									"value": "643e5c3b70fc2bbcad04533f",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lista2- dobrze Ci idzie!",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists/643e5c3b70fc2bbcad045340?key={{key}}&token={{token}}&idBoard=643e5c3b70fc2bbcad045338&name=dobrze Ci idzie!",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"643e5c3b70fc2bbcad045340"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "idBoard",
+									"value": "643e5c3b70fc2bbcad045338"
+								},
+								{
+									"key": "name",
+									"value": "dobrze Ci idzie!"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lista3- good job!",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists/643e5c3b70fc2bbcad045341?token={{token}}&key={{key}}&idBoard=643e5c3b70fc2bbcad045338&name=good job!",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"643e5c3b70fc2bbcad045341"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "idBoard",
+									"value": "643e5c3b70fc2bbcad045338"
+								},
+								{
+									"key": "name",
+									"value": "good job!"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "działania na kartach",
+			"item": [
+				{
+					"name": "tworzenie karty SQL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards?key={{key}}&token={{token}}&idBoard=643e5c3b70fc2bbcad045338&idList=643e5c3b70fc2bbcad04533f&name=SQL",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "idBoard",
+									"value": "643e5c3b70fc2bbcad045338"
+								},
+								{
+									"key": "idList",
+									"value": "643e5c3b70fc2bbcad04533f"
+								},
+								{
+									"key": "name",
+									"value": "SQL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tworzenie karty REST API",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards?key={{key}}&token={{token}}&name=REST API&idBoard=643e5c3b70fc2bbcad045338&idList=643e5c3b70fc2bbcad04533f",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "REST API"
+								},
+								{
+									"key": "idBoard",
+									"value": "643e5c3b70fc2bbcad045338"
+								},
+								{
+									"key": "idList",
+									"value": "643e5c3b70fc2bbcad04533f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tworzenie karty Python",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards?key={{key}}&token={{token}}&idList=643e5c3b70fc2bbcad04533f&idBoard=643e5c3b70fc2bbcad045338&name=Python",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "idList",
+									"value": "643e5c3b70fc2bbcad04533f"
+								},
+								{
+									"key": "idBoard",
+									"value": "643e5c3b70fc2bbcad045338"
+								},
+								{
+									"key": "name",
+									"value": "Python"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "przeniesienie SQL do listy 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/643e66e427354e03cf98c657?idBoard=643e5c3b70fc2bbcad045338&idList=643e5c3b70fc2bbcad045341&key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"643e66e427354e03cf98c657"
+							],
+							"query": [
+								{
+									"key": "idBoard",
+									"value": "643e5c3b70fc2bbcad045338"
+								},
+								{
+									"key": "idList",
+									"value": "643e5c3b70fc2bbcad045341"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "przeniesienie REST API do listy 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/643e67a244ab0606eef0f527?idBoard=643e5c3b70fc2bbcad045338&idList=643e5c3b70fc2bbcad045341&key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"643e67a244ab0606eef0f527"
+							],
+							"query": [
+								{
+									"key": "idBoard",
+									"value": "643e5c3b70fc2bbcad045338"
+								},
+								{
+									"key": "idList",
+									"value": "643e5c3b70fc2bbcad045341"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dodawanie nowych członków",
+			"item": [
+				{
+					"name": "członkowie",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "dodanie nowego członka",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tworzenie tablicy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/boards/?key={{key}}&token={{token}}&name=To Do",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "To Do"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pobranie id kart na tablicy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/boards/643e5c3b70fc2bbcad045338/lists?key={{key}}&token={{token}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						"643e5c3b70fc2bbcad045338",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tworzenie checklisty na sql lista",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/cards/643e66e427354e03cf98c657/checklists?key={{key}}&token={{token}}&idBoard=643e5c3b70fc2bbcad045338&idList=643e66e427354e03cf98c657&name=to do",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						"643e66e427354e03cf98c657",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "idBoard",
+							"value": "643e5c3b70fc2bbcad045338"
+						},
+						{
+							"key": "idList",
+							"value": "643e66e427354e03cf98c657"
+						},
+						{
+							"key": "name",
+							"value": "to do"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zmiana cheklisty",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/cards/{id}/checkItem/{idCheckItem}?key={{key}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						"{id}",
+						"checkItem",
+						"{idCheckItem}"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aciąganie listy checkist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/1/cards/643e66e427354e03cf98c657/checklists?key={{key}}&token={{token}}&idBoard=643e5c3b70fc2bbcad045338&idList=643e66e427354e03cf98c657",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						"643e66e427354e03cf98c657",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "idBoard",
+							"value": "643e5c3b70fc2bbcad045338"
+						},
+						{
+							"key": "idList",
+							"value": "643e66e427354e03cf98c657"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nowy komentarz",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
